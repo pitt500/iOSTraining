@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dRT-un-iTU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Feed View Controller-->
+        <scene sceneID="e0x-tF-GNQ">
+            <objects>
+                <tableViewController storyboardIdentifier="ios" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SSg-l0-O3Y" customClass="FeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="305" sectionHeaderHeight="28" sectionFooterHeight="28" id="dXu-Gv-Ylw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="SSg-l0-O3Y" id="NHf-38-5gq"/>
+                            <outlet property="delegate" destination="SSg-l0-O3Y" id="64p-ki-GWr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="P28-rg-QxO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgj-KZ-pu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-1243"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4Ce-hN-CP5">
+            <objects>
+                <tabBarController id="dRT-un-iTU" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="UaG-bw-Rnx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="php-wj-uKs" kind="relationship" relationship="viewControllers" id="Xh9-Gt-Yj3"/>
+                        <segue destination="xA6-8d-5Jf" kind="relationship" relationship="viewControllers" id="vDE-J2-l7s"/>
+                        <segue destination="k1X-Es-fEB" kind="relationship" relationship="viewControllers" id="8Zr-O6-D60"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l91-XS-70m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-936" y="-580"/>
+        </scene>
+        <!--#iOS-->
+        <scene sceneID="EVF-PY-xRZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="php-wj-uKs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="#iOS" id="Bcg-He-cJ3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hbb-MI-h4m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SSg-l0-O3Y" kind="relationship" relationship="rootViewController" id="c0w-CM-l7G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H15-6b-png" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="-1243"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="WcV-EQ-Fu7">
+            <objects>
+                <tableViewController storyboardIdentifier="android" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iKL-so-Iw0" customClass="FeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="305" sectionHeaderHeight="28" sectionFooterHeight="28" id="2ad-Xh-tl4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="iKL-so-Iw0" id="Za5-zt-lQs"/>
+                            <outlet property="delegate" destination="iKL-so-Iw0" id="Hcw-9y-j5d"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="UgH-tl-gmn"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQU-NW-xkO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="-580"/>
+        </scene>
+        <!--#Android-->
+        <scene sceneID="FIS-3F-mcx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xA6-8d-5Jf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="#Android" id="rPe-bM-Yrz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sEx-0J-dVO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iKL-so-Iw0" kind="relationship" relationship="rootViewController" id="PrZ-ZG-895"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iXd-pD-Qhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="-580"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="Ixy-6O-GhS">
+            <objects>
+                <tableViewController storyboardIdentifier="windowsphone" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BSt-y3-Q60" customClass="FeedViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="305" sectionHeaderHeight="28" sectionFooterHeight="28" id="iUV-4X-ahh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="BSt-y3-Q60" id="D63-po-smp"/>
+                            <outlet property="delegate" destination="BSt-y3-Q60" id="QLa-QP-5qp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Wpx-Gl-X2m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cLa-Cx-VGy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="927" y="168"/>
+        </scene>
+        <!--#WindowsPhone-->
+        <scene sceneID="G94-fk-B6y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k1X-Es-fEB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="#WindowsPhone" id="Zg7-G8-PTM"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sUp-dV-leZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BSt-y3-Q60" kind="relationship" relationship="rootViewController" id="eUd-af-ph6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1P-wd-KpO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-68" y="168"/>
+        </scene>
+    </scenes>
+</document>

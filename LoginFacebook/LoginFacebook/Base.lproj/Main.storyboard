@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X83-0w-bHf">
+                                <rect key="frame" x="522" y="61" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHL-6S-FEg">
+                                <rect key="frame" x="522" y="118" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vul-9k-FCM">
+                                <rect key="frame" x="522" y="176" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmx-X6-gOL">
+                                <rect key="frame" x="237" y="518" width="126" height="30"/>
+                                <state key="normal" title="Login to Facebook"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vF0-EU-WO0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdL-jY-Mai">
+                                <rect key="frame" x="67" y="61" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="my8-A1-Znj">
+                                <rect key="frame" x="105" y="118" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Facebook Token:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4k-JN-Zvf">
+                                <rect key="frame" x="21" y="176" width="130" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LHL-6S-FEg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-171.5" id="5jH-i6-fc7"/>
+                            <constraint firstItem="D4k-JN-Zvf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-113.5" id="7CQ-Da-VAF"/>
+                            <constraint firstItem="my8-A1-Znj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="105" id="Cnn-0f-deB"/>
+                            <constraint firstItem="X83-0w-bHf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="FEt-Uc-c6X"/>
+                            <constraint firstItem="EdL-jY-Mai" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="GoP-em-cXz"/>
+                            <constraint firstItem="my8-A1-Znj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-171.5" id="QVr-cw-gt1"/>
+                            <constraint firstItem="EdL-jY-Mai" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="XeH-cm-Rgr"/>
+                            <constraint firstItem="X83-0w-bHf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-228.5" id="Z7l-Mt-OXa"/>
+                            <constraint firstItem="Lmx-X6-gOL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="233" id="ZjT-Op-Iaw"/>
+                            <constraint firstAttribute="trailing" secondItem="Vul-9k-FCM" secondAttribute="trailing" constant="36" id="Zqo-JT-PKP"/>
+                            <constraint firstItem="EdL-jY-Mai" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-228.5" id="cFl-yx-a91"/>
+                            <constraint firstAttribute="trailing" secondItem="LHL-6S-FEg" secondAttribute="trailing" constant="36" id="t7Y-kh-ozZ"/>
+                            <constraint firstItem="Vul-9k-FCM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-113.5" id="tWY-Z8-C6a"/>
+                            <constraint firstAttribute="trailing" secondItem="X83-0w-bHf" secondAttribute="trailing" constant="36" id="uI4-4M-ZV3"/>
+                            <constraint firstItem="D4k-JN-Zvf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" id="xNI-b4-pxE"/>
+                            <constraint firstItem="Lmx-X6-gOL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yrr-ns-ZVY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="LHL-6S-FEg" id="3Ld-dY-ouP"/>
+                        <outlet property="facebookTokenLabel" destination="Vul-9k-FCM" id="MSf-Wz-qQf"/>
+                        <outlet property="loginButton" destination="Lmx-X6-gOL" id="kGD-ZG-XoU"/>
+                        <outlet property="usernameLabel" destination="X83-0w-bHf" id="Pep-hT-e4v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="323" y="57"/>
+        </scene>
+    </scenes>
+</document>
