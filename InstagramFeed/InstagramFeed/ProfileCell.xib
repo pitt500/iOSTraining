@@ -43,7 +43,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H24-8b-nk5">
-                        <rect key="frame" x="0.0" y="86" width="320" height="270.5"/>
+                        <rect key="frame" x="0.0" y="86" width="320" height="271"/>
                     </imageView>
                 </subviews>
                 <constraints>

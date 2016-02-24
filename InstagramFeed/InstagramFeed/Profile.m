@@ -13,8 +13,9 @@
 
 +(NSDictionary *) JSONKeyPathsByPropertyKey{
     return @{
-        @"username": @"caption.from.username",
-        @"fullname": @"caption.from.full_name",
+        @"Id": @"user.id",
+        @"username": @"user.username",
+        @"fullname": @"user.full_name",
         @"publishDate": @"caption.created_time",
         @"profileImageUrl": @"caption.from.profile_picture",
         @"contentImageUrl": @"images.low_resolution.url"

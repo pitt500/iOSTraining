@@ -12,6 +12,7 @@
 
 @interface Profile : MTLModel <MTLJSONSerializing>
 
+@property (nonatomic, strong) NSString *Id;
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic,strong) NSString *fullname;
 @property (nonatomic,strong) NSDate *publishDate;

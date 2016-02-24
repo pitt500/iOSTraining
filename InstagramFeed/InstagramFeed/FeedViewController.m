@@ -9,6 +9,7 @@
 #import "FeedViewController.h"
 #import "ProfileCell.h"
 #import "ApiManager.h"
+#import "UserDetailController.h"
 
 @interface FeedViewController ()
 
@@ -67,6 +68,11 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     //First this deselects the row after it was tapped. That makes it fade from the gray highlight color back to the regular white.
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    UserDetailController *userVC = [[UserDetailController alloc] init];
+    userVC.profile = self.feed[indexPath.row];
+    [self.navigationController pushViewController:userVC animated:YES];
 }
+
 
 @end
