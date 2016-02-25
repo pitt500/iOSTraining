@@ -8,11 +8,17 @@
 
 #import "MediaViewCell.h"
 
+@interface MediaViewCell ()
+
+@end
+
 @implementation MediaViewCell
 
 - (void)awakeFromNib {
     // Initialization code
 }
+
+
 
 
 @end

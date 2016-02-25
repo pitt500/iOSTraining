@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
+  - CCMPopup (1.1.0)
   - Mantle (2.0.6):
     - Mantle/extobjc (= 2.0.6)
   - Mantle/extobjc (2.0.6)
@@ -21,11 +22,13 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - CCMPopup
   - Mantle (~> 2.0)
   - NSDate+TimeAgo
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CCMPopup: e41fad5b8a0823c9cddea8eab6d431670c9dabe5
   Mantle: 299966b00759634931699f69cb6a30b9239b944d
   NSDate+TimeAgo: 416f55d2696d3744c313091c5a9280d47f8238fe
 

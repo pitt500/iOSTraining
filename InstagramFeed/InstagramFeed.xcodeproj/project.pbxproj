@@ -19,6 +19,8 @@
 		B5CFD1B71C7B695600BC95CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5CFD1B61C7B695600BC95CD /* Assets.xcassets */; };
 		B5CFD1BA1C7B695600BC95CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5CFD1B81C7B695600BC95CD /* LaunchScreen.storyboard */; };
 		B5CFD1C31C7B771500BC95CD /* ProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CFD1C21C7B771500BC95CD /* ProfileCell.m */; };
+		B5E8AD171C7F70D400F76FDB /* PopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E8AD151C7F70D400F76FDB /* PopupViewController.m */; };
+		B5E8AD181C7F70D400F76FDB /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5E8AD161C7F70D400F76FDB /* PopupViewController.xib */; };
 		B5ED669E1C7B7EEE00431143 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5ED669D1C7B7EEE00431143 /* FeedViewController.m */; };
 		B5FB9BC91C7E2F7400431EE9 /* UserDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FB9BC71C7E2F7400431EE9 /* UserDetailController.m */; };
 		B5FB9BCA1C7E2F7400431EE9 /* UserDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FB9BC81C7E2F7400431EE9 /* UserDetailController.xib */; };
@@ -47,6 +49,9 @@
 		B5CFD1BB1C7B695600BC95CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5CFD1C11C7B771500BC95CD /* ProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileCell.h; sourceTree = "<group>"; };
 		B5CFD1C21C7B771500BC95CD /* ProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileCell.m; sourceTree = "<group>"; };
+		B5E8AD141C7F70D400F76FDB /* PopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupViewController.h; sourceTree = "<group>"; };
+		B5E8AD151C7F70D400F76FDB /* PopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopupViewController.m; sourceTree = "<group>"; };
+		B5E8AD161C7F70D400F76FDB /* PopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 		B5ED669C1C7B7EEE00431143 /* FeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
 		B5ED669D1C7B7EEE00431143 /* FeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedViewController.m; sourceTree = "<group>"; };
 		B5FB9BC61C7E2F7400431EE9 /* UserDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailController.h; sourceTree = "<group>"; };
@@ -144,6 +149,8 @@
 		B5FB9BCF1C7E448700431EE9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B5E8AD141C7F70D400F76FDB /* PopupViewController.h */,
+				B5E8AD151C7F70D400F76FDB /* PopupViewController.m */,
 				B5ED669C1C7B7EEE00431143 /* FeedViewController.h */,
 				B5ED669D1C7B7EEE00431143 /* FeedViewController.m */,
 				B5FB9BC61C7E2F7400431EE9 /* UserDetailController.h */,
@@ -157,15 +164,16 @@
 			children = (
 				B5CFD1B31C7B695600BC95CD /* Main.storyboard */,
 				B5CFD1B81C7B695600BC95CD /* LaunchScreen.storyboard */,
-				B5CFD1C11C7B771500BC95CD /* ProfileCell.h */,
-				B5CFD1C21C7B771500BC95CD /* ProfileCell.m */,
 				B53CD7181C7BDC07003DC16B /* ProfileCell.xib */,
 				B5FB9BC81C7E2F7400431EE9 /* UserDetailController.xib */,
+				B55450151C7E791700516964 /* MediaViewCell.xib */,
+				B5E8AD161C7F70D400F76FDB /* PopupViewController.xib */,
+				B5CFD1C11C7B771500BC95CD /* ProfileCell.h */,
+				B5CFD1C21C7B771500BC95CD /* ProfileCell.m */,
 				B5FB9BD21C7E4A6A00431EE9 /* UserView.h */,
 				B5FB9BD31C7E4A6A00431EE9 /* UserView.m */,
 				B55450131C7E791700516964 /* MediaViewCell.h */,
 				B55450141C7E791700516964 /* MediaViewCell.m */,
-				B55450151C7E791700516964 /* MediaViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -242,6 +250,7 @@
 				B5CFD1BA1C7B695600BC95CD /* LaunchScreen.storyboard in Resources */,
 				B5FB9BCA1C7E2F7400431EE9 /* UserDetailController.xib in Resources */,
 				B53CD71A1C7BDC07003DC16B /* ProfileCell.xib in Resources */,
+				B5E8AD181C7F70D400F76FDB /* PopupViewController.xib in Resources */,
 				B5CFD1B71C7B695600BC95CD /* Assets.xcassets in Resources */,
 				B5CFD1B51C7B695600BC95CD /* Main.storyboard in Resources */,
 				B55450171C7E791700516964 /* MediaViewCell.xib in Resources */,
@@ -308,6 +317,7 @@
 				B5CDF38A1C7BB5C1002FA94D /* ApiManager.m in Sources */,
 				B5ED669E1C7B7EEE00431143 /* FeedViewController.m in Sources */,
 				B5CFD1C31C7B771500BC95CD /* ProfileCell.m in Sources */,
+				B5E8AD171C7F70D400F76FDB /* PopupViewController.m in Sources */,
 				B55450161C7E791700516964 /* MediaViewCell.m in Sources */,
 				B5FB9BCE1C7E414C00431EE9 /* Media.m in Sources */,
 				B5CDF3871C7B9946002FA94D /* Profile.m in Sources */,

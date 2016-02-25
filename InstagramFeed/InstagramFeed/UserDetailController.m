@@ -11,7 +11,9 @@
 #import "Media.h"
 #import "MediaViewCell.h"
 #import "ApiManager.h"
+#import "PopupViewController.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import <CCMPopup/CCMPopupTransitioning.h>
 
 @interface UserDetailController ()
 
@@ -31,6 +33,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.userImage.layer.cornerRadius = 20;
+    self.userImage.clipsToBounds = YES;
     self.apiManager = [[ApiManager alloc] init];
     
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
@@ -55,6 +59,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)getUserMedia{
     [self.apiManager geUserMediaWithId:self.profile.Id completionHandler:^(NSArray *media) {
         self.mediaArray = media;
@@ -64,10 +69,30 @@
     }];
 }
 
-
+- (void) showPopupWithMedia:(Media*)media{
+    PopupViewController *popupController = [[PopupViewController alloc] initWithMedia:media];
+    
+    CCMPopupTransitioning *popup = [CCMPopupTransitioning sharedInstance];
+    if (self.view.bounds.size.height < 420) {
+        popup.destinationBounds = CGRectMake(0, 0, ([UIScreen mainScreen].bounds.size.height-20) * .75, [UIScreen mainScreen].bounds.size.height-20);
+    } else {
+        popup.destinationBounds = CGRectMake(0, 0, 300, 400);
+    }
+    popup.presentedController = popupController;
+    popup.presentingController = self;
+    popup.dismissableByTouchingBackground = YES;
+    [self presentViewController:popupController animated:YES completion:nil];
+}
 
 
 #pragma mark - Collection View Delegates
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    Media *media = self.mediaArray[indexPath.row];
+    [self showPopupWithMedia:media];
+    
+}
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     

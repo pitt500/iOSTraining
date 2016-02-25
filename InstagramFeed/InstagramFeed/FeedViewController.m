@@ -80,6 +80,7 @@
     
     UserDetailController *userVC = [[UserDetailController alloc] init];
     userVC.profile = self.feed[indexPath.row];
+    
     [self.navigationController pushViewController:userVC animated:YES];
 }
 
