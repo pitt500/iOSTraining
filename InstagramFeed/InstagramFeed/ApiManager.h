@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
-#import "Profile.h"
 
 @interface ApiManager : NSObject
 
 -(void)getFeedWithTag:(NSString *)instagramTag
     completionHandler:(void (^)(NSArray *feed))handler
             onFailure:(void (^)(NSError *error))onError;
+
+
+-(void)geUserMediaWithId:(NSString *)userId
+       completionHandler:(void (^)(NSArray *media))handler
+               onFailure:(void (^)(NSError *error))onError;
 
 @end

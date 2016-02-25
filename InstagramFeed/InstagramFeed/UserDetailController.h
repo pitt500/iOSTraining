@@ -9,10 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class Profile;
+@class Media;
 
-@interface UserDetailController : UIViewController
+@interface UserDetailController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic, strong) Profile *profile;
-
+@property(nonatomic,strong) Media *media;
 
 @end

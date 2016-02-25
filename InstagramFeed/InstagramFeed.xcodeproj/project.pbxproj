@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		50BD4019B3DBBFCC65979F91 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DCD47791F859340E7DC6D1 /* libPods.a */; };
 		B53CD71A1C7BDC07003DC16B /* ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B53CD7181C7BDC07003DC16B /* ProfileCell.xib */; };
+		B55450161C7E791700516964 /* MediaViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B55450141C7E791700516964 /* MediaViewCell.m */; };
+		B55450171C7E791700516964 /* MediaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B55450151C7E791700516964 /* MediaViewCell.xib */; };
 		B5CDF3871C7B9946002FA94D /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CDF3861C7B9946002FA94D /* Profile.m */; };
 		B5CDF38A1C7BB5C1002FA94D /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CDF3891C7BB5C1002FA94D /* ApiManager.m */; };
 		B5CFD1AC1C7B695600BC95CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5CFD1AB1C7B695600BC95CD /* main.m */; };
@@ -28,6 +30,9 @@
 		ADB41A092FEF79848CEEFCF3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B1DCD47791F859340E7DC6D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53CD7181C7BDC07003DC16B /* ProfileCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileCell.xib; sourceTree = "<group>"; };
+		B55450131C7E791700516964 /* MediaViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewCell.h; sourceTree = "<group>"; };
+		B55450141C7E791700516964 /* MediaViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewCell.m; sourceTree = "<group>"; };
+		B55450151C7E791700516964 /* MediaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediaViewCell.xib; sourceTree = "<group>"; };
 		B5CDF3851C7B9946002FA94D /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
 		B5CDF3861C7B9946002FA94D /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
 		B5CDF3881C7BB5C1002FA94D /* ApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
@@ -158,6 +163,9 @@
 				B5FB9BC81C7E2F7400431EE9 /* UserDetailController.xib */,
 				B5FB9BD21C7E4A6A00431EE9 /* UserView.h */,
 				B5FB9BD31C7E4A6A00431EE9 /* UserView.m */,
+				B55450131C7E791700516964 /* MediaViewCell.h */,
+				B55450141C7E791700516964 /* MediaViewCell.m */,
+				B55450151C7E791700516964 /* MediaViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 				B53CD71A1C7BDC07003DC16B /* ProfileCell.xib in Resources */,
 				B5CFD1B71C7B695600BC95CD /* Assets.xcassets in Resources */,
 				B5CFD1B51C7B695600BC95CD /* Main.storyboard in Resources */,
+				B55450171C7E791700516964 /* MediaViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +308,7 @@
 				B5CDF38A1C7BB5C1002FA94D /* ApiManager.m in Sources */,
 				B5ED669E1C7B7EEE00431143 /* FeedViewController.m in Sources */,
 				B5CFD1C31C7B771500BC95CD /* ProfileCell.m in Sources */,
+				B55450161C7E791700516964 /* MediaViewCell.m in Sources */,
 				B5FB9BCE1C7E414C00431EE9 /* Media.m in Sources */,
 				B5CDF3871C7B9946002FA94D /* Profile.m in Sources */,
 				B5CFD1AF1C7B695600BC95CD /* AppDelegate.m in Sources */,

@@ -7,6 +7,8 @@
 //
 
 #import "ApiManager.h"
+#import "Profile.h"
+#import "Media.h"
 
 @interface ApiManager ()
 
@@ -31,6 +33,30 @@
         
         if (handler) {
             handler(feed);
+        }
+        
+    } failure:^(NSURLSessionTask *operation, NSError *error){
+        if(onError){
+            onError(error);
+        }
+    }];
+}
+
+-(void)geUserMediaWithId:(NSString *)userId
+    completionHandler:(void (^)(NSArray *media))handler
+            onFailure:(void (^)(NSError *error))onError{
+    
+    NSString *instagramMediaUrl = [NSString stringWithFormat:@"https://api.instagram.com/v1/users/%@/media/recent?client_id=005c9a0586834b7bb7335f5955ab951a",userId];
+    
+    self.manager = [AFHTTPSessionManager manager];
+    
+    [self.manager GET:instagramMediaUrl parameters:nil progress:nil success:^(NSURLSessionTask *task, id jsonObject){
+        
+        NSArray *jsonMedia = jsonObject[@"data"];
+        NSArray *media = [MTLJSONAdapter modelsOfClass:Media.class fromJSONArray:jsonMedia error:nil];
+        
+        if (handler) {
+            handler(media);
         }
         
     } failure:^(NSURLSessionTask *operation, NSError *error){
