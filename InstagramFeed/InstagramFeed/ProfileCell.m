@@ -36,7 +36,7 @@
     [self.profileImage setImageWithURL:profile.profileImageUrl];
     [self.imageToShow setImageWithURL:profile.contentImageUrl];
     
-    self.usernameLabel.text = profile.username;
+    self.usernameLabel.text = [NSString stringWithFormat:@"@%@",profile.username];
     self.fullnameLabel.text = profile.fullname;
     self.dateLabel.text = [NSString stringWithFormat:@"%@",[profile.publishDate timeAgoSimple]];
 }

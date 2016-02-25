@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="357"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="357"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="356.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="def-xG-zZE">
@@ -22,29 +22,29 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uMA-j9-UE8">
-                        <rect key="frame" x="276" y="8" width="36" height="21"/>
+                        <rect key="frame" x="262" y="8" width="50" height="23"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="36" id="78t-DX-lLe"/>
+                            <constraint firstAttribute="width" constant="50" id="78t-DX-lLe"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-ha-OQS">
-                        <rect key="frame" x="60" y="8" width="208" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72S-dW-r5y">
-                        <rect key="frame" x="60" y="31" width="70" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="60" y="35" width="61.5" height="16.5"/>
+                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="10"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H24-8b-nk5">
-                        <rect key="frame" x="0.0" y="86" width="320" height="271"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H24-8b-nk5">
+                        <rect key="frame" x="0.0" y="86" width="320" height="262.5"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tx8-ha-OQS">
+                        <rect key="frame" x="60" y="8" width="194" height="27"/>
+                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                        <color key="textColor" red="0.14347668459999999" green="0.45113771730000002" blue="0.87534767670000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="H24-8b-nk5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9er-Az-2iC"/>
@@ -57,7 +57,7 @@
                     <constraint firstItem="uMA-j9-UE8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="OXL-cM-WSo"/>
                     <constraint firstItem="uMA-j9-UE8" firstAttribute="leading" secondItem="tx8-ha-OQS" secondAttribute="trailing" constant="8" id="ddi-JB-0ct"/>
                     <constraint firstAttribute="trailing" secondItem="uMA-j9-UE8" secondAttribute="trailing" constant="8" id="gZJ-pO-o57"/>
-                    <constraint firstAttribute="bottom" secondItem="H24-8b-nk5" secondAttribute="bottom" id="iIr-3D-gWm"/>
+                    <constraint firstAttribute="bottom" secondItem="H24-8b-nk5" secondAttribute="bottom" constant="8" id="iIr-3D-gWm"/>
                     <constraint firstItem="def-xG-zZE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="q4e-ta-CeT"/>
                     <constraint firstItem="tx8-ha-OQS" firstAttribute="top" secondItem="def-xG-zZE" secondAttribute="top" id="tQG-zY-sbw"/>
                 </constraints>

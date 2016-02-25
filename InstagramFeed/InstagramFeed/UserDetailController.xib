@@ -38,15 +38,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="136"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsu-bK-guI">
-                            <rect key="frame" x="262" y="78" width="76" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-zD-fGS">
-                            <rect key="frame" x="265" y="107" width="70" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <rect key="frame" x="259" y="78" width="82" height="27"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="17"/>
+                            <color key="textColor" red="0.14347668459999999" green="0.45113771730000002" blue="0.87534767670000002" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="itQ-aW-Cve">
@@ -56,11 +50,17 @@
                                 <constraint firstAttribute="height" constant="60" id="Bvq-75-Zh4"/>
                             </constraints>
                         </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-zD-fGS">
+                            <rect key="frame" x="254" y="106" width="92.5" height="25"/>
+                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="itQ-aW-Cve" firstAttribute="top" secondItem="Ob1-pf-w0T" secondAttribute="topMargin" constant="2" id="4b7-gO-ZZm"/>
-                        <constraint firstItem="3pT-zD-fGS" firstAttribute="top" secondItem="Fsu-bK-guI" secondAttribute="bottom" constant="8" id="6bD-Sd-JC7"/>
+                        <constraint firstItem="3pT-zD-fGS" firstAttribute="top" secondItem="Fsu-bK-guI" secondAttribute="bottom" constant="1" id="6bD-Sd-JC7"/>
                         <constraint firstItem="Fsu-bK-guI" firstAttribute="centerX" secondItem="Ob1-pf-w0T" secondAttribute="centerX" id="70M-jt-bbL"/>
                         <constraint firstItem="itQ-aW-Cve" firstAttribute="centerX" secondItem="Ob1-pf-w0T" secondAttribute="centerX" id="A3C-Kd-yCu"/>
                         <constraint firstItem="3pT-zD-fGS" firstAttribute="top" secondItem="Fsu-bK-guI" secondAttribute="bottom" constant="8" id="I6e-Hg-gqG"/>
