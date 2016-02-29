@@ -18,6 +18,17 @@
 
 @implementation ApiManager
 
+static ApiManager *sharedApiManager = nil; //Static insatence variable
+
+#pragma  mark - Singleton methods
++(id)sharedManager{
+    if (!sharedApiManager) {
+        sharedApiManager = [[ApiManager alloc] init];
+    }
+    return sharedApiManager;
+}
+
+#pragma mark - Methods with callbacks
 -(void)getFeedWithTag:(NSString *)instagramTag
     completionHandler:(void (^)(NSArray *profile))handler
             onFailure:(void (^)(NSError *error))onError{

@@ -22,7 +22,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *fullnameLabel;
 @property (weak, nonatomic) IBOutlet UICollectionView *mediaCollection;
 
-@property (nonatomic, strong) ApiManager *apiManager;
 @property (nonatomic,strong) NSArray<Media *> *mediaArray;
 
 @end
@@ -35,7 +34,6 @@
     [super viewDidLoad];
     self.userImage.layer.cornerRadius = 20;
     self.userImage.clipsToBounds = YES;
-    self.apiManager = [[ApiManager alloc] init];
     
     
     ///This is for avoid the overlap the navigation bar when full screen functionaluty
@@ -63,7 +61,7 @@
 
 
 - (void)getUserMedia{
-    [self.apiManager geUserMediaWithId:self.profile.Id completionHandler:^(NSArray *media) {
+    [[ApiManager sharedManager] geUserMediaWithId:self.profile.Id completionHandler:^(NSArray *media) {
         self.mediaArray = media;
         [self.mediaCollection reloadData];
     } onFailure:^(NSError *error) {

@@ -20,4 +20,6 @@
        completionHandler:(void (^)(NSArray *media))handler
                onFailure:(void (^)(NSError *error))onError;
 
++(id)sharedManager;
+
 @end

@@ -13,7 +13,6 @@
 
 @interface FeedViewController ()
 
-@property (nonatomic,strong) ApiManager *apiManager;
 @property (nonatomic,strong) NSArray <Profile *> *feed;
 
 @end
@@ -27,7 +26,6 @@
     
     
     [self.tableView registerNib:[UINib nibWithNibName:@"ProfileCell" bundle:nil] forCellReuseIdentifier:@"ProfileCell"];
-    self.apiManager = [[ApiManager alloc] init];
     [self getFeedFromInstagram];
     
 }
@@ -46,7 +44,7 @@
     
     NSString *storyboardId = self.restorationIdentifier;
     
-    [self.apiManager getFeedWithTag:storyboardId completionHandler:^(NSArray *feed) {
+    [[ApiManager sharedManager] getFeedWithTag:storyboardId completionHandler:^(NSArray *feed) {
         self.feed = feed;
         [self.tableView reloadData];
     } onFailure:^(NSError *error) {
