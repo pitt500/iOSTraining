@@ -14,6 +14,5 @@
 @interface UserDetailController : UIViewController <UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
 @property(nonatomic, strong) Profile *profile;
-@property(nonatomic,strong) Media *media;
 
 @end

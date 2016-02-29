@@ -11,7 +11,6 @@
 @class Media;
 
 @interface PopupViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIImageView *popupImage;
 
 - (instancetype)initWithMedia:(Media *)media;
 

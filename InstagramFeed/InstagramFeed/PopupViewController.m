@@ -11,6 +11,7 @@
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface PopupViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *popupImage;
 @property (nonatomic,strong) Media *media;
 @end
 

@@ -37,6 +37,8 @@
     self.userImage.clipsToBounds = YES;
     self.apiManager = [[ApiManager alloc] init];
     
+    
+    ///This is for avoid the overlap the navigation bar when full screen functionaluty
     if ([self respondsToSelector:@selector(edgesForExtendedLayout)])
         self.edgesForExtendedLayout = UIRectEdgeNone;
     
@@ -73,11 +75,14 @@
     PopupViewController *popupController = [[PopupViewController alloc] initWithMedia:media];
     
     CCMPopupTransitioning *popup = [CCMPopupTransitioning sharedInstance];
-    if (self.view.bounds.size.height < 420) {
-        popup.destinationBounds = CGRectMake(0, 0, ([UIScreen mainScreen].bounds.size.height-20) * .75, [UIScreen mainScreen].bounds.size.height-20);
-    } else {
-        popup.destinationBounds = CGRectMake(0, 0, 300, 400);
-    }
+    
+    CGFloat ratio = [UIScreen mainScreen].bounds.size.width * .9;
+    
+//    if (self.view.bounds.size.height < 420) {
+        popup.destinationBounds = CGRectMake(0, 0, ratio, ratio);
+//    } else {
+//        popup.destinationBounds = CGRectMake(0, 0, 300, 400);
+//    }
     popup.presentedController = popupController;
     popup.presentingController = self;
     popup.dismissableByTouchingBackground = YES;
