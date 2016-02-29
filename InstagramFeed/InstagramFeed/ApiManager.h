@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <AFNetworking.h>
 
+#define BASE_URL_API    @"https://api.instagram.com/v1"
+#define CLIENT_ID   @"005c9a0586834b7bb7335f5955ab951a"
+
 @interface ApiManager : NSObject
 
 -(void)getFeedWithTag:(NSString *)instagramTag

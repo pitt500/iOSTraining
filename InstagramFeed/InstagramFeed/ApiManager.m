@@ -33,7 +33,7 @@ static ApiManager *sharedApiManager = nil; //Static insatence variable
     completionHandler:(void (^)(NSArray *profile))handler
             onFailure:(void (^)(NSError *error))onError{
 
-    NSString *instagramFeedUrl = [NSString stringWithFormat:@"https://api.instagram.com/v1/tags/%@/media/recent?client_id=005c9a0586834b7bb7335f5955ab951a",instagramTag];
+    NSString *instagramFeedUrl = [NSString stringWithFormat:@"%@/tags/%@/media/recent?client_id=%@",BASE_URL_API,instagramTag,CLIENT_ID];
     
     self.manager = [AFHTTPSessionManager manager];
     
@@ -57,7 +57,7 @@ static ApiManager *sharedApiManager = nil; //Static insatence variable
     completionHandler:(void (^)(NSArray *media))handler
             onFailure:(void (^)(NSError *error))onError{
     
-    NSString *instagramMediaUrl = [NSString stringWithFormat:@"https://api.instagram.com/v1/users/%@/media/recent?client_id=005c9a0586834b7bb7335f5955ab951a",userId];
+    NSString *instagramMediaUrl = [NSString stringWithFormat:@"%@/users/%@/media/recent?client_id=%@",BASE_URL_API,userId,CLIENT_ID];
     
     self.manager = [AFHTTPSessionManager manager];
     
