@@ -29,7 +29,6 @@
 @implementation UserDetailController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.userImage.layer.cornerRadius = 20;
@@ -76,11 +75,7 @@
     
     CGFloat ratio = [UIScreen mainScreen].bounds.size.width * .9;
     
-//    if (self.view.bounds.size.height < 420) {
-        popup.destinationBounds = CGRectMake(0, 0, ratio, ratio);
-//    } else {
-//        popup.destinationBounds = CGRectMake(0, 0, 300, 400);
-//    }
+    popup.destinationBounds = CGRectMake(0, 0, ratio, ratio);
     popup.presentedController = popupController;
     popup.presentingController = self;
     popup.dismissableByTouchingBackground = YES;

@@ -7,25 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8FE98BC23012AC21A9F09E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 015A808B595BA9F5E44593F5 /* libPods.a */; };
 		B5113EB01C88B94700622A43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5113EAF1C88B94700622A43 /* main.m */; };
 		B5113EB31C88B94700622A43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5113EB21C88B94700622A43 /* AppDelegate.m */; };
-		B5113EB61C88B94700622A43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5113EB51C88B94700622A43 /* ViewController.m */; };
-		B5113EB91C88B94700622A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5113EB71C88B94700622A43 /* Main.storyboard */; };
+		B5113EB61C88B94700622A43 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5113EB51C88B94700622A43 /* LoginViewController.m */; };
 		B5113EBB1C88B94700622A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5113EBA1C88B94700622A43 /* Assets.xcassets */; };
 		B5113EBE1C88B94700622A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5113EBC1C88B94700622A43 /* LaunchScreen.storyboard */; };
+		B546DC101C88BDEF00562B3E /* LogoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC0F1C88BDEF00562B3E /* LogoutViewController.m */; };
+		B546DC131C88BF2E00562B3E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC121C88BF2E00562B3E /* User.m */; };
+		B546DC181C88CC3700562B3E /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B546DC171C88CC3700562B3E /* Welcome.storyboard */; };
+		B546DC1A1C88CC4800562B3E /* Core.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B546DC191C88CC4800562B3E /* Core.storyboard */; };
+		B546DC1D1C88F51B00562B3E /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		015A808B595BA9F5E44593F5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A72F6AE9CC36F7538A233533 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B5113EAB1C88B94700622A43 /* LoginWithDifferentViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginWithDifferentViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5113EAF1C88B94700622A43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B5113EB11C88B94700622A43 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B5113EB21C88B94700622A43 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B5113EB41C88B94700622A43 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B5113EB51C88B94700622A43 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B5113EB81C88B94700622A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5113EB41C88B94700622A43 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B5113EB51C88B94700622A43 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		B5113EBA1C88B94700622A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5113EBD1C88B94700622A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5113EBF1C88B94700622A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B546DC0E1C88BDEF00562B3E /* LogoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoutViewController.h; sourceTree = "<group>"; };
+		B546DC0F1C88BDEF00562B3E /* LogoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoutViewController.m; sourceTree = "<group>"; };
+		B546DC111C88BF2E00562B3E /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B546DC121C88BF2E00562B3E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B546DC171C88CC3700562B3E /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
+		B546DC191C88CC4800562B3E /* Core.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Core.storyboard; sourceTree = "<group>"; };
+		B546DC1B1C88F51B00562B3E /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
+		B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
+		D0D818F23FD0DB980D9F36FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8FE98BC23012AC21A9F09E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21446BEB2CEE19D87509179D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A72F6AE9CC36F7538A233533 /* Pods.debug.xcconfig */,
+				D0D818F23FD0DB980D9F36FC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B5113EA21C88B94700622A43 = {
 			isa = PBXGroup;
 			children = (
 				B5113EAD1C88B94700622A43 /* LoginWithDifferentViews */,
 				B5113EAC1C88B94700622A43 /* Products */,
+				21446BEB2CEE19D87509179D /* Pods */,
+				D667AC2CD251234D4AA4EEB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +85,13 @@
 		B5113EAD1C88B94700622A43 /* LoginWithDifferentViews */ = {
 			isa = PBXGroup;
 			children = (
+				B546DC211C88F8B600562B3E /* Managers */,
+				B546DC201C88F8A200562B3E /* Models */,
+				B546DC1F1C88F89100562B3E /* Controllers */,
+				B546DC1E1C88F87500562B3E /* Storyboards */,
 				B5113EB11C88B94700622A43 /* AppDelegate.h */,
 				B5113EB21C88B94700622A43 /* AppDelegate.m */,
-				B5113EB41C88B94700622A43 /* ViewController.h */,
-				B5113EB51C88B94700622A43 /* ViewController.m */,
-				B5113EB71C88B94700622A43 /* Main.storyboard */,
 				B5113EBA1C88B94700622A43 /* Assets.xcassets */,
-				B5113EBC1C88B94700622A43 /* LaunchScreen.storyboard */,
 				B5113EBF1C88B94700622A43 /* Info.plist */,
 				B5113EAE1C88B94700622A43 /* Supporting Files */,
 			);
@@ -79,6 +106,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B546DC1E1C88F87500562B3E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B5113EBC1C88B94700622A43 /* LaunchScreen.storyboard */,
+				B546DC171C88CC3700562B3E /* Welcome.storyboard */,
+				B546DC191C88CC4800562B3E /* Core.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		B546DC1F1C88F89100562B3E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B5113EB41C88B94700622A43 /* LoginViewController.h */,
+				B5113EB51C88B94700622A43 /* LoginViewController.m */,
+				B546DC0E1C88BDEF00562B3E /* LogoutViewController.h */,
+				B546DC0F1C88BDEF00562B3E /* LogoutViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B546DC201C88F8A200562B3E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B546DC111C88BF2E00562B3E /* User.h */,
+				B546DC121C88BF2E00562B3E /* User.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B546DC211C88F8B600562B3E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B546DC1B1C88F51B00562B3E /* ViewControllerManager.h */,
+				B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		D667AC2CD251234D4AA4EEB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				015A808B595BA9F5E44593F5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5113EC21C88B94700622A43 /* Build configuration list for PBXNativeTarget "LoginWithDifferentViews" */;
 			buildPhases = (
+				D4F38D59CC623AD911A465F1 /* Check Pods Manifest.lock */,
 				B5113EA71C88B94700622A43 /* Sources */,
 				B5113EA81C88B94700622A43 /* Frameworks */,
 				B5113EA91C88B94700622A43 /* Resources */,
+				F81DCEE103B626BDAD05E094 /* Embed Pods Frameworks */,
+				E8188EE30AE7FA653513672C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,19 +215,71 @@
 			files = (
 				B5113EBE1C88B94700622A43 /* LaunchScreen.storyboard in Resources */,
 				B5113EBB1C88B94700622A43 /* Assets.xcassets in Resources */,
-				B5113EB91C88B94700622A43 /* Main.storyboard in Resources */,
+				B546DC181C88CC3700562B3E /* Welcome.storyboard in Resources */,
+				B546DC1A1C88CC4800562B3E /* Core.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4F38D59CC623AD911A465F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E8188EE30AE7FA653513672C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81DCEE103B626BDAD05E094 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B5113EA71C88B94700622A43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5113EB61C88B94700622A43 /* ViewController.m in Sources */,
+				B546DC131C88BF2E00562B3E /* User.m in Sources */,
+				B5113EB61C88B94700622A43 /* LoginViewController.m in Sources */,
 				B5113EB31C88B94700622A43 /* AppDelegate.m in Sources */,
+				B546DC101C88BDEF00562B3E /* LogoutViewController.m in Sources */,
+				B546DC1D1C88F51B00562B3E /* ViewControllerManager.m in Sources */,
 				B5113EB01C88B94700622A43 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,14 +287,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B5113EB71C88B94700622A43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5113EB81C88B94700622A43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5113EBC1C88B94700622A43 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +380,7 @@
 		};
 		B5113EC31C88B94700622A43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A72F6AE9CC36F7538A233533 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginWithDifferentViews/Info.plist;
@@ -270,6 +392,7 @@
 		};
 		B5113EC41C88B94700622A43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0D818F23FD0DB980D9F36FC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LoginWithDifferentViews/Info.plist;
@@ -298,6 +421,7 @@
 				B5113EC41C88B94700622A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

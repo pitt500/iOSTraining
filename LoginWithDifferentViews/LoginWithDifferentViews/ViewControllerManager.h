@@ -8,6 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIViewController;
+
 @interface ViewControllerManager : NSObject
+
++ (instancetype)sharedInstance;
+
+- (void)callViewFromStoryboard:(NSString *)storyboardID
+              viewControllerID:(NSString *)viewControllerID delegate:(UIViewController*)delegate;
 
 @end

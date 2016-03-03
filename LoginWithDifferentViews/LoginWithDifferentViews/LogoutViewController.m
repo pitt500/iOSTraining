@@ -7,6 +7,9 @@
 //
 
 #import "LogoutViewController.h"
+#import "LoginViewController.h"
+#import "ViewControllerManager.h"
+#import <Realm/Realm.h>
 
 @interface LogoutViewController ()
 
@@ -24,14 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)userLogout:(id)sender {
+    [self deleteSessionToken];
+    [[ViewControllerManager sharedInstance] callViewFromStoryboard:@"Welcome" viewControllerID:@"LoginViewController" delegate:self];
 }
-*/
+
+- (void) deleteSessionToken{
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm deleteAllObjects];
+    [realm commitWriteTransaction];
+}
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Realm/Realm.h>
 
-@interface User : NSObject
+@interface User : RLMObject
+
+@property BOOL isLogged;
 
 @end

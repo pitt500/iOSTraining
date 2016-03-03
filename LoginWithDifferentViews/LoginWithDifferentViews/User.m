@@ -10,4 +10,13 @@
 
 @implementation User
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _isLogged = YES;
+    }
+    return self;
+}
+
 @end
