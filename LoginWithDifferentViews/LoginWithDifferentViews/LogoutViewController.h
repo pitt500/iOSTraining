@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LogoutViewController.h
 //  LoginWithDifferentViews
 //
 //  Created by projas on 3/3/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LogoutViewController : UIViewController
 
 @end
-
