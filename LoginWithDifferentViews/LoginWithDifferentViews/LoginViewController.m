@@ -9,10 +9,12 @@
 #import "LoginViewController.h"
 #import "LogoutViewController.h"
 #import "User.h"
-#import "ViewControllerManager.h"
+#import "NavigationManager.h"
 #import <Realm/Realm.h>
 
 @interface LoginViewController ()
+
+@property (nonatomic,strong) NavigationManager *navigationManager;
 
 @end
 
@@ -21,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationManager = [[NavigationManager alloc] init];
     
 }
 
@@ -31,7 +34,7 @@
 
 - (IBAction)logUserIn:(id)sender {
     [self saveSessionToken];
-    [[ViewControllerManager sharedInstance] callViewFromStoryboard:@"Core" viewControllerID:@"LogoutViewController" delegate:self];
+    [self.navigationManager showLogout];
 }
 
 -(void) saveSessionToken{

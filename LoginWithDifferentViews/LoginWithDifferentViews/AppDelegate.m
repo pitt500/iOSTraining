@@ -7,9 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LoginViewController.h"
-#import "LogoutViewController.h"
-#import "User.h"
+#import "NavigationManager.h"
 
 @interface AppDelegate ()
 
@@ -21,27 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    UIStoryboard *welcomeStoryBoard = [UIStoryboard storyboardWithName:@"Welcome" bundle:[NSBundle mainBundle]];
-    UIStoryboard *coreStoryBoard = [UIStoryboard storyboardWithName:@"Core" bundle:[NSBundle mainBundle]];
-    AppDelegate *myAppDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    if ([self isUserLogged]) {
-        
-        LogoutViewController *logout = [coreStoryBoard instantiateViewControllerWithIdentifier:@"LogoutViewController"];
-        myAppDelegate.window.rootViewController = logout;
+    NavigationManager *navigationManager = [[NavigationManager alloc] init];
+    if ([navigationManager isUserLogged]) {
+        [navigationManager showLogout];
     }else{
-        LoginViewController *login = [welcomeStoryBoard instantiateViewControllerWithIdentifier:@"LoginViewController"];
-        myAppDelegate.window.rootViewController = login;
+        [navigationManager showLogin];
     }
     
     return YES;
-}
-
-- (BOOL) isUserLogged{
-    if([[User objectsWhere:@"isLogged == YES"] firstObject]){
-        return YES;
-    }
-    
-    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

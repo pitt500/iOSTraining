@@ -17,7 +17,7 @@
 		B546DC131C88BF2E00562B3E /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC121C88BF2E00562B3E /* User.m */; };
 		B546DC181C88CC3700562B3E /* Welcome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B546DC171C88CC3700562B3E /* Welcome.storyboard */; };
 		B546DC1A1C88CC4800562B3E /* Core.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B546DC191C88CC4800562B3E /* Core.storyboard */; };
-		B546DC1D1C88F51B00562B3E /* ViewControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */; };
+		B546DC241C8901A800562B3E /* NavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B546DC231C8901A800562B3E /* NavigationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +38,8 @@
 		B546DC121C88BF2E00562B3E /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		B546DC171C88CC3700562B3E /* Welcome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Welcome.storyboard; sourceTree = "<group>"; };
 		B546DC191C88CC4800562B3E /* Core.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Core.storyboard; sourceTree = "<group>"; };
-		B546DC1B1C88F51B00562B3E /* ViewControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerManager.h; sourceTree = "<group>"; };
-		B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerManager.m; sourceTree = "<group>"; };
+		B546DC221C8901A800562B3E /* NavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationManager.h; sourceTree = "<group>"; };
+		B546DC231C8901A800562B3E /* NavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationManager.m; sourceTree = "<group>"; };
 		D0D818F23FD0DB980D9F36FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,8 +139,8 @@
 		B546DC211C88F8B600562B3E /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				B546DC1B1C88F51B00562B3E /* ViewControllerManager.h */,
-				B546DC1C1C88F51B00562B3E /* ViewControllerManager.m */,
+				B546DC221C8901A800562B3E /* NavigationManager.h */,
+				B546DC231C8901A800562B3E /* NavigationManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				B5113EB61C88B94700622A43 /* LoginViewController.m in Sources */,
 				B5113EB31C88B94700622A43 /* AppDelegate.m in Sources */,
 				B546DC101C88BDEF00562B3E /* LogoutViewController.m in Sources */,
-				B546DC1D1C88F51B00562B3E /* ViewControllerManager.m in Sources */,
+				B546DC241C8901A800562B3E /* NavigationManager.m in Sources */,
 				B5113EB01C88B94700622A43 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

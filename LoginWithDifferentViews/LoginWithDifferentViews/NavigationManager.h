@@ -10,4 +10,8 @@
 
 @interface NavigationManager : NSObject
 
+- (BOOL) isUserLogged;
+- (void)showLogout;
+- (void)showLogin;
+
 @end
