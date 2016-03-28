@@ -16,8 +16,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    NSError *configureError;
+    [[GGLContext sharedInstance] configureWithError:&configureError];
+    NSAssert(!configureError, @"Error configuring Google services %@",configureError);
+    
+    [GIDSignIn sharedInstance].delegate = self;
+    
     return YES;
+}
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+    return [[GIDSignIn sharedInstance] handleURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    return [[GIDSignIn sharedInstance] handleURL:url sourceApplication:sourceApplication annotation:annotation];
+}
+
+- (void)signIn:(GIDSignIn *)signIn didSignInForUser:(GIDGoogleUser *)user withError:(NSError *)error{
+    //Perform any operations on signed in user here...
+    NSString *userId = user.userID;                     //For client-side use only...
+    NSString *idToken = user.authentication.idToken;    //Safe to send the the server...
+    NSString *name = user.profile.name;
+    NSString *email = user.profile.email;
+    
+    [user.profile imageURLWithDimension:100];
+    
+    NSLog(@"%@",userId); //108025702918150583462
+    NSLog(@"%@",[user.profile imageURLWithDimension:100]);
+    
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"ToggleAuthUINotification"
+     object:nil];
+}
+
+-(void)signIn:(GIDSignIn *)signIn didDisconnectWithUser:(GIDGoogleUser *)user withError:(NSError *)error{
+    //Perform any operations when the user disconnects from app here...
+    [[NSNotificationCenter defaultCenter]
+     postNotificationName:@"ToggleAuthUINotification"
+     object:nil];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
