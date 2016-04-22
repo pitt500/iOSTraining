@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class Coordinates: NSObject {
     var latitude:   String
@@ -16,4 +17,5 @@ class Coordinates: NSObject {
         self.latitude = latitude
         self.longitude = longitude
     }
+    
 }

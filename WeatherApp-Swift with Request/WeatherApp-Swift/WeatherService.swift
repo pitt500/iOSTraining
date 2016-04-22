@@ -19,7 +19,7 @@ class WeatherService: NSObject {
         let coordinates = Coordinates(WithLatitude: String(format: "%.2f", latitude), longitude: String(format: "%.2f", longitude))
         
         
-        Alamofire.request(WeatherRouter.GetWeatherWithCoordinates(coordinates, useCelcius))
+        Alamofire.request(WeatherRouter.GetWeatherWithCoordinates(coordinates: coordinates, useCelcious: useCelcius))
             .responseJSON { response in
                 
                 switch response.result {
@@ -47,7 +47,7 @@ class WeatherService: NSObject {
     static func getDailyForecast(WithCoordinates coordinates: Coordinates, useCelcius: Bool, completion: (jsonForecast: AnyObject ) -> Void, onFailure: (error: NSError) -> Void ) -> Void {
         
         let numberOfDays = 7
-        Alamofire.request(WeatherRouter.GetDailyForecastWithCoordinates(coordinates, useCelcius,numberOfDays))
+        Alamofire.request(WeatherRouter.GetDailyForecastWithCoordinates(coordinates: coordinates, useCelcious: useCelcius, numberOfDays: numberOfDays))
             .responseJSON { response in
                 
                 switch response.result {
