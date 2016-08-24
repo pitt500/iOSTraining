@@ -33,7 +33,7 @@ class EventViewModel: NSObject {
   func getAllUpcomingEvents() -> Promise<[ROEvent]> {
     return eventService.getUpcomingEvents()
       .then { jsonEvents -> [ROEvent] in
-        let listOfEvents: Array<ROEvent> = Mapper<ROEvent>().mapArray(jsonEvents)!
+        let listOfEvents: [ROEvent] = Mapper<ROEvent>().mapArray(jsonEvents)!
         return listOfEvents
         
       }

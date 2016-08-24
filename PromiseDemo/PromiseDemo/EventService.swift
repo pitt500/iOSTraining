@@ -34,13 +34,13 @@ class EventService {
 //    }
 //  }
   
-  func getUpcomingEvents() -> Promise<[AnyObject]> {
+  func getUpcomingEvents() -> Promise<[[String: AnyObject]]> {
     return Promise { fulfill, reject in
       apiService.manager.request(EventRouter.getUpcomingEvents())
         .responseJSON { response in
           switch response.result{
           case .Success(let JSON):
-            fulfill(JSON as! [AnyObject])
+            fulfill(JSON as! [[String: AnyObject]])
           case .Failure(let error):
             reject(error)
           }
